@@ -5,7 +5,7 @@ You can use this project as a starting point for a Rails web application. It req
 
 [Rails 4.0 Bootstrap Demo App](http://rails4-bootstrap.klepa.co/)
 
-## How to
+## How to use
 
 * Edit `db/seed.rb` to customimze admin user then run `rake db:seed`
 
