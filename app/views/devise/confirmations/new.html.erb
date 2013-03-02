@@ -1,0 +1,6 @@
+<h2>Resend confirmation instructions</h2>
+<%= simple_form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => {:method => :post , :class => 'form-vertical' }) do |f| %>
+  <%= f.input :email, :required => true, :autofocus => true %>
+  <%= f.button :submit, 'Resend confirmation instructions', :class => 'btn-primary' %>
+<% end %>
+<%= render "devise/shared/links" %>

@@ -1,0 +1,15 @@
+defaults: &defaults
+  roles:
+    - admin
+    - moderator
+    - user
+  default_role: user
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

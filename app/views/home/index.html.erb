@@ -1,0 +1,29 @@
+<h1>Rails 4.0 App with Devise, CanCan, OmniAuth and Twitter Bootstrap</h1>
+
+<hr><p>You can use this project as a starting point for a Rails web application. It requires Rails 4 and uses Devise/OmniAuth for user management and authentication, CanCan for user access control, and Twitter Bootstrap for CSS styling.</p>
+
+<h2>
+<a name="how-to" class="anchor" href="#how-to"><span class="mini-icon mini-icon-link"></span></a>How to</h2>
+
+<ul>
+<li><p>Edit <code>db/seed.rb</code> to customimze admin user then run <code>rake db:seed</code></p></li>
+<li>
+<p>Edit <code>config/initializers/devise.rb</code> to customize your omniauth providers:</p>
+
+<p><code>
+  config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'], scope: 'email,user_birthday,read_stream'<br />
+  config.omniauth :twitter, ENV['CONSUMER_KEY'], ENV['CONSUMER_SECRET']
+</code></p>
+
+</li>
+<li><p>Edit <code>config/config.yml</code> to customize your application settings, they will be avaliable via <code>AppConfig</code> object within your app, e.g. <code>AppConfig.default_role</code></p></li>
+</ul><hr><h3>
+<a name="links" class="anchor" href="#links"><span class="mini-icon mini-icon-link"></span></a>Links</h3>
+
+<p><a href="http://github.com/plataformatec/devise">Devise</a></p>
+
+<p><a href="https://github.com/intridea/omniauth">OmniAuth</a></p>
+
+<p><a href="https://github.com/ryanb/cancan">CanCan</a></p>
+
+<p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></p></article>
