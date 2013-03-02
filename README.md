@@ -3,6 +3,8 @@
 
 You can use this project as a starting point for a Rails web application. It requires Rails 4 and uses Devise/OmniAuth for user management and authentication, CanCan for user access control, and Twitter Bootstrap for CSS styling.
 
+[Rails 4.0 Bootstrap Demo App](http://rails4-bootstrap.klepa.co/)
+
 ## How to
 
 * Edit `db/seed.rb` to customimze admin user then run `rake db:seed`
