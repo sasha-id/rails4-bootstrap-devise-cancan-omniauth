@@ -10,7 +10,7 @@ You can use this project as a starting point for a Rails web application. It req
 * Edit `config/initializers/devise.rb` to customize your omniauth providers:
 
 ```ruby
-config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'], scope: 'email,user_birthday,read_stream', display: 'popup'
+config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'], scope: 'email,user_birthday,read_stream'
 config.omniauth :twitter, ENV['CONSUMER_KEY'], ENV['CONSUMER_SECRET']
 ```
 
