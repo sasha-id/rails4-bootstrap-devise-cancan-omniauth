@@ -1,7 +1,7 @@
 # Rails 4.0 App with Mongoid, Devise, CanCan, OmniAuth and Twitter Bootstrap
 ---
 
-You can use this project as a starting point for a Rails web application. It requires Rails 4 and uses Mongoid as database, Devise/OmniAuth for user management and authentication, CanCan for user access control, and Twitter Bootstrap for CSS styling.
+You can use this project as a starting point for a Rails web application. It requires Rails 4 uses Mongoid as database, Devise/OmniAuth for user management and authentication, CanCan for user access control, and Twitter Bootstrap for CSS styling.
 
 [Rails 4.0 Bootstrap Demo App](http://rails4-bootstrap.klepa.co/)
 
