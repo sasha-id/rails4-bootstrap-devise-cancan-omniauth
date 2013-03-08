@@ -7,6 +7,10 @@ You can use this project as a starting point for a Rails web application. It req
 
 ## How to use
 
+* `git clone git@github.com:alex-klepa/rails4-bootstrap-devise-cancan-omniauth.git`
+
+* `rake secret` and copy and paste new secret key to `config/initializers/secret_token.rb`
+
 * Edit `db/seed.rb` to customimze admin user then run `rake db:seed`
 
 * Edit `config/initializers/devise.rb` to customize your omniauth providers:
