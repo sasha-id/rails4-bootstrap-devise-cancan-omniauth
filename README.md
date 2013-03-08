@@ -7,7 +7,9 @@ You can use this project as a starting point for a Rails web application. It req
 
 ## How to use
 
-* `git clone git@github.com:alex-klepa/rails4-bootstrap-devise-cancan-omniauth.git`
+* Execute `git clone git@github.com:alex-klepa/rails4-bootstrap-devise-cancan-omniauth.git`
+
+* Execute `bundle install`
 
 * Execute `rake secret` and copy/paste new secret key to `config/initializers/secret_token.rb`
 
