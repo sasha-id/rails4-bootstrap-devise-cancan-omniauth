@@ -82,7 +82,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "670cec58a4f40678082dded70f4a0655a5e447f19c4b7698fdbbbd1a61c8f9ea0fddf34147b5cf031dd739011e343d9fc8c5c519f228a0a8374ed5e462a803d9"
+  # config.pepper = "d3b29b04cd8dcead36a2231535a982b6ed27c742edfa93250250581da4a1eebba2ac64de733769e685d00e65e1621267c609665e5f421ec2adfa2579617ba31d"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -175,7 +175,9 @@ Devise.setup do |config|
   # :sha1, :sha512 or encryptors from others authentication tools as :clearance_sha1,
   # :authlogic_sha512 (then you should set stretches above to 20 for default behavior)
   # and :restful_authentication_sha1 (then you should set stretches to 10, and copy
-  # REST_AUTH_SITE_KEY to pepper)
+  # REST_AUTH_SITE_KEY to pepper).
+  #
+  # Require the `devise-encryptable` gem when using anything other than bcrypt
   # config.encryptor = :sha512
 
   # ==> Configuration for :token_authenticatable
@@ -214,9 +216,9 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
-  config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'], scope: 'email,user_birthday,read_stream', display: 'popup'
+  config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'], scope: 'email,user_birthday,read_stream'
   config.omniauth :twitter, ENV['CONSUMER_KEY'], ENV['CONSUMER_SECRET']
-  
+
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
