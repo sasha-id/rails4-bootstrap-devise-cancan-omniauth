@@ -7,11 +7,13 @@ You can use this project as a starting point for a Rails web application. It req
 
 ## How to use
 
-* Execute `git clone git@github.com:alex-klepa/rails4-bootstrap-devise-cancan-omniauth.git`
+* Install new version of bundler: `gem install --version '>= 1.3.0' bundler`
 
-* Execute `bundle install`
+* Get edge(4.0) version of rails: `git clone https://github.com/rails/rails.git` and `cd rails`
 
-* Execute `rake secret` and copy/paste new secret key to `config/initializers/secret_token.rb`
+* Generate new rails app from template `railties/bin/rails new ../myapp --edge --skip-bundle -m https://raw.github.com/alex-klepa/rails4-bootstrap-devise-cancan-omniauth/master/rails4-bootstrap.rb`
+
+* `cd ../myapp`
 
 * Edit `db/seed.rb` to customimze admin user then run `rake db:seed`
 
