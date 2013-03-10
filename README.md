@@ -11,7 +11,10 @@ You can use this project as a starting point for a Rails web application. It req
 
 * Get edge(4.0) version of rails: `git clone https://github.com/rails/rails.git` and `cd rails`
 
-* Generate new rails app from template: `railties/bin/rails new ../myapp --edge --skip-bundle -m https://raw.github.com/alex-klepa/rails4-bootstrap-devise-cancan-omniauth/master/rails4-bootstrap.rb`
+* Generate new rails app from template: 
+```
+railties/bin/rails new ../myapp --edge --skip-bundle -m https://raw.github.com/alex-klepa/rails4-bootstrap-devise-cancan-omniauth/master/rails4-bootstrap.rb
+```
 
 * `cd ../myapp`
 
