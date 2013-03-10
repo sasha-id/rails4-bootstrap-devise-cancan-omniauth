@@ -31,7 +31,7 @@ development:
   options:
     # Configuration for whether or not to allow access to fields that do
     # not have a field definition on the model. (default: true)
-    allow_dynamic_fields: false
+    # allow_dynamic_fields: true
 
     # Enable the identity map, needed for eager loading. (default: false)
     # identity_map_enabled: false
@@ -78,11 +78,3 @@ test:
         # low amounts for fast failures.
         max_retries: 1
         retry_interval: 0
-production:
-  sessions:
-    default:
-      database: bootstrap_app_production
-      hosts:
-        - localhost:27017
-  options:
-    allow_dynamic_fields: false
