@@ -123,7 +123,7 @@ inject_into_file 'config/initializers/devise.rb', after: /# config.omniauth .*?\
 end
 
 ### Download misc files
-source_url = 'https://raw.github.com/alex-klepa/rails4-bootstrap-devise-cancan-omniauth/master/'
+source_url = 'https://raw.github.com/alex-klepa/rails4-bootstrap-devise-cancan-omniauth/master'
 get "#{source_url}/app/assets/javascripts/users.js.coffee",                   'app/assets/javascripts/users.js.coffee'
 get "#{source_url}/app/assets/stylesheets/application.css.scss",              'app/assets/stylesheets/application.css.scss'
 get "#{source_url}/app/assets/stylesheets/bootstrap_and_overrides.css.scss",  'app/assets/stylesheets/bootstrap_and_overrides.css.scss'
@@ -156,8 +156,8 @@ get "#{source_url}/config/initializers/load_config.rb",                       'c
 get "#{source_url}/app/controllers/application_controller.rb",                'app/controllers/application_controller.rb'
 get "#{source_url}/app/views/layouts/application.html.erb",                   'app/views/layouts/application.html.erb'
 get "#{source_url}/db/seeds.rb",                                              'db/seeds.rb'
-get "#{source_url}/custom_plan.rb"                                            'custom_plan.rb'
-get "#{source_url}/zeus.json"                                                 'zeus.json'
-get "#{source_url}/spec/spec_helper.rb"                                       'spec/spec_helper.rb'
+get "#{source_url}/custom_plan.rb",                                           'custom_plan.rb'
+get "#{source_url}/zeus.json",                                                'zeus.json'
+get "#{source_url}/spec/spec_helper.rb",                                      'spec/spec_helper.rb'
 
 
