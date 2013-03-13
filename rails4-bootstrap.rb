@@ -159,5 +159,5 @@ get "#{source_url}/db/seeds.rb",                                              'd
 get "#{source_url}/custom_plan.rb",                                           'custom_plan.rb'
 get "#{source_url}/zeus.json",                                                'zeus.json'
 get "#{source_url}/spec/spec_helper.rb",                                      'spec/spec_helper.rb'
-get "#{source_url}/Guardfile",                                                'spec/Guardfile'
+get "#{source_url}/Guardfile",                                                'Guardfile'
 
