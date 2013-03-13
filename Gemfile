@@ -11,9 +11,24 @@ group :assets do
 end
 
 group :development do
+  gem "guard-rspec"
   gem "pry"
   gem "quiet_assets"
   gem "thin"
+end
+
+group :development, :test do
+  gem "zeus"
+  gem "rspec-rails"
+  gem "factory_girl_rails"
+end
+
+group :test do
+  gem "mongoid-rspec"
+  gem "ffaker"
+  gem "simplecov", require: false
+  gem "database_cleaner"
+  gem "rb-inotify", "~> 0.9"
 end
 
 gem "jquery-rails"
@@ -21,7 +36,7 @@ gem "turbolinks"
 gem "jbuilder", "~> 1.0.1"
 gem "bootstrap-sass", "~> 2.3.0.1"
 gem "font-awesome-sass-rails"
-gem "simple_form", github: "plataformatec/simple_form", branch: "rails_4"
+gem "simple_form", github: "plataformatec/simple_form"
 gem "devise", git: "https://github.com/plataformatec/devise.git", branch: "rails4"
 gem "cancan"
 gem "omniauth"

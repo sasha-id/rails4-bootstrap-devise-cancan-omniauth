@@ -54,7 +54,6 @@ gem_group :test do
   gem 'ffaker'
   gem 'simplecov', require: false
   gem 'database_cleaner'
-  gem 'rb-inotify', '~> 0.9'
 end
 
 gem 'jquery-rails'
@@ -157,4 +156,8 @@ get "#{source_url}/config/initializers/load_config.rb",                       'c
 get "#{source_url}/app/controllers/application_controller.rb",                'app/controllers/application_controller.rb'
 get "#{source_url}/app/views/layouts/application.html.erb",                   'app/views/layouts/application.html.erb'
 get "#{source_url}/db/seeds.rb",                                              'db/seeds.rb'
+get "#{source_url}/custom_plan.rb"                                            'custom_plan.rb'
+get "#{source_url}/zeus.json"                                                 'zeus.json'
+get "#{source_url}/spec/spec_helper.rb"                                       'spec/spec_helper.rb'
+
 
