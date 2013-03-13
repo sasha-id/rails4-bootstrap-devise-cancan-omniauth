@@ -8,26 +8,29 @@ You can use this project as a starting point for a Rails web application. It req
 ## How to use
 
 * Install new version of bundler: `gem install --version '>= 1.3.0' bundler`
-
 * Get edge(4.0) version of rails: `git clone https://github.com/rails/rails.git` and `cd rails`
-
 * Generate new rails app from template: 
+
 ```
 railties/bin/rails new ../myapp --edge --skip-bundle -m https://raw.github.com/alex-klepa/rails4-bootstrap-devise-cancan-omniauth/master/rails4-bootstrap.rb
 ```
-
 * `cd ../myapp`
-
 * Edit `db/seed.rb` to customimze admin user then run `rake db:seed`
-
 * Edit `config/initializers/devise.rb` to customize your omniauth providers:
 
 ```ruby
 config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'], scope: 'email,user_birthday,read_stream'
 config.omniauth :twitter, ENV['CONSUMER_KEY'], ENV['CONSUMER_SECRET']
 ```
-
 * Edit `config/config.yml` to customize your application settings, they will be avaliable via `AppConfig` object within your app, e.g. `AppConfig.default_role`
+
+
+##Test-driven development
+
+* In 1st console start zeus: `zeus start`
+* In 2nd start rails server: `zeus s`
+* In 3rd start guard: `bundle exec guard`
+
 
 ---
 ### Links
