@@ -26,21 +26,35 @@ remove_file 'Gemfile'
 create_file 'Gemfile'
 add_source 'https://rubygems.org'
 
-gem 'rails',     github: 'rails/rails'
-gem "mongoid", github: 'mongoid/mongoid'
-
+gem 'rails', github: 'rails/rails'
+gem 'mongoid', github: 'mongoid/mongoid'
 gem_group :assets do
   gem 'sprockets-rails', github: 'rails/sprockets-rails'
-  gem 'sass-rails',   github: 'rails/sass-rails'
+  gem 'sass-rails', github: 'rails/sass-rails'
   gem 'coffee-rails', github: 'rails/coffee-rails'
   gem 'therubyracer', platforms: :ruby
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem_group :development do
+  gem 'guard-rspec'
   gem 'pry'
   gem 'quiet_assets'
   gem 'thin'
+end
+
+gem_group :development, :test do
+  gem 'zeus'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+
+gem_group :test do
+  gem 'mongoid-rspec'
+  gem 'ffaker'
+  gem 'simplecov', require: false
+  gem 'database_cleaner'
+  gem 'rb-inotify', '~> 0.9'
 end
 
 gem 'jquery-rails'
@@ -48,13 +62,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 gem 'bootstrap-sass', '~> 2.3.0.1'
 gem 'font-awesome-sass-rails'
-gem "simple_form", github: 'plataformatec/simple_form'
-gem 'devise',  :git => 'https://github.com/plataformatec/devise.git',  branch: 'rails4'
+gem 'simple_form', github: 'plataformatec/simple_form'
+gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'rails4'
 gem 'cancan'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
-
 gem 'hashugar', github: 'alex-klepa/hashugar'
 
 run 'bundle install'
