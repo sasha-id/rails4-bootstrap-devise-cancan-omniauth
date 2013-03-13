@@ -160,4 +160,4 @@ get "#{source_url}/custom_plan.rb",                                           'c
 get "#{source_url}/zeus.json",                                                'zeus.json'
 get "#{source_url}/spec/spec_helper.rb",                                      'spec/spec_helper.rb'
 get "#{source_url}/Guardfile",                                                'Guardfile'
-
+get "#{source_url}/.rspec",                                                   '.rspec'
