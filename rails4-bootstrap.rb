@@ -78,11 +78,10 @@ generate 'devise:install'
 generate :controller, "home index"
 
 ### Routes
-route 'root :to => "home#index"'
 route 'resources :users'
 route <<-eos
 
-  devise_for :users, :controllers => {
+  devise_for :users, controllers: {
     registrations: "users/registrations", 
     passwords: "users/passwords", 
     omniauth_callbacks: "users/omniauth_callbacks"
@@ -91,7 +90,11 @@ eos
 route <<-eos
 
   authenticated :user do
-    root :to => 'home#index'
+    root to: 'home#index', as: :authenticated_root
+  end
+
+  unauthenticated do
+    root to: "home#index"
   end
 eos
 
