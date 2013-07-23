@@ -11,7 +11,7 @@ You can use this project as a starting point for a Rails web application. It req
 * Generate new rails app from template: 
 
 ```
-railties/bin/rails new ../myapp --edge --skip-bundle -m https://raw.github.com/alex-klepa/rails4-bootstrap-devise-cancan-omniauth/master/rails4-bootstrap.rb
+rails new myapp --skip-bundle -m https://raw.github.com/alex-klepa/rails4-bootstrap-devise-cancan-omniauth/master/rails4-bootstrap.rb
 ```
 * `cd ../myapp`
 * Edit `db/seed.rb` to customimze admin user then run `rake db:seed`
