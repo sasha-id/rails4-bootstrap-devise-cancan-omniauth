@@ -1,14 +1,16 @@
 source "https://rubygems.org"
 
-gem "rails", github: "rails/rails"
+gem 'rails', '4.0.0'
 gem "mongoid", github: "mongoid/mongoid"
-group :assets do
-  gem "sprockets-rails", github: "rails/sprockets-rails"
-  gem "sass-rails", github: "rails/sass-rails"
-  gem "coffee-rails", github: "rails/coffee-rails"
-  gem "therubyracer", platforms: :ruby
-  gem "uglifier", ">= 1.0.3"
-end
+
+gem 'sass-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'therubyracer', platforms: :ruby
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 1.2'
+
 
 group :development do
   gem "guard-rspec"
@@ -31,13 +33,10 @@ group :test do
   gem "rb-inotify", "~> 0.9"
 end
 
-gem "jquery-rails"
-gem "turbolinks"
-gem "jbuilder", "~> 1.0.1"
-gem "bootstrap-sass", "~> 2.3.0.1"
+gem "bootstrap-sass", "~> 2.3.2.1"
 gem "font-awesome-sass-rails"
 gem "simple_form", github: "plataformatec/simple_form"
-gem "devise", git: "https://github.com/plataformatec/devise.git", branch: "rails4"
+gem "devise", "~> 3.0.0"
 gem "cancan"
 gem "omniauth"
 gem "omniauth-facebook"

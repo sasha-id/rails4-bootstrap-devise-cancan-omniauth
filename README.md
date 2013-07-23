@@ -7,8 +7,7 @@ You can use this project as a starting point for a Rails web application. It req
 
 ## How to use
 
-* Install new version of bundler: `gem install --version '>= 1.3.0' bundler`
-* Get edge(4.0) version of rails: `git clone https://github.com/rails/rails.git` and `cd rails`
+* Install rails 4: `gem install rails`
 * Generate new rails app from template: 
 
 ```
