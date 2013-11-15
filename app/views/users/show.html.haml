@@ -1,0 +1,7 @@
+%h3 User
+%p
+  User: #{@user.full_name}
+%p
+  Email: #{@user.email if @user.email}
+%p
+  Roles: #{@user.roles.join(', ') if @user.roles}

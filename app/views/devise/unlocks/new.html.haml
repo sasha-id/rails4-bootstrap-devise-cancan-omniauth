@@ -1,0 +1,5 @@
+%h2 Resend unlock instructions
+= simple_form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => {:method => :post , :class => 'form-vertical' }) do |f|
+  = f.input :email, :required => true, :autofocus => true
+  = f.button :submit, 'Resend unlock instructions', :class => 'btn-primary'
+= render "devise/shared/links"
