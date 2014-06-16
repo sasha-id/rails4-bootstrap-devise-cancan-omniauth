@@ -12,9 +12,12 @@ gsub_file 'config/application.rb', "require 'rails/all'" do
 <<-eos
 #require 'rails/all'
 require 'action_controller/railtie'
+require 'action_view/railtie'
 require 'action_mailer/railtie'
 #require 'rails/test_unit/railtie'
 require 'sprockets/railtie'
+
+
 eos
 end
 
@@ -26,12 +29,12 @@ remove_file 'Gemfile'
 create_file 'Gemfile'
 add_source 'https://rubygems.org'
 
-gem 'rails', '4.0.0'
+gem 'rails', '4.1.1'
 gem "mongoid", github: "mongoid/mongoid"
 
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.1'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'turbolinks'
