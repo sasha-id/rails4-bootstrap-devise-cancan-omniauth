@@ -1,9 +1,9 @@
 BootstrapApp::Application.routes.draw do
   
   
-  authenticated :user do
-    root :to => 'home#index'
-  end
+  #authenticated :user do
+  #  root :to => 'home#index'
+  #end
 
   devise_for :users, :controllers => {
     registrations: "users/registrations", 
