@@ -24,7 +24,7 @@ config.omniauth :twitter, ENV['CONSUMER_KEY'], ENV['CONSUMER_SECRET']
 * Edit `config/config.yml` to customize your application settings, they will be avaliable via `AppConfig` object within your app, e.g. `AppConfig.default_role`
 
 
-##Test-driven development
+## Test-driven development
 
 * In 1st console start zeus: `zeus start`
 * In 2nd start rails server: `zeus s`
